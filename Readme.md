@@ -1,62 +1,92 @@
 # React + TypeScript + Tailwind CSS Setup Script
 
-This script automates the creation of a new React project with TypeScript, and installs and configures Tailwind CSS v4 with a simple setup, including a pre-configured `App.tsx` to get started quickly.
+This script automates the setup of a new React project using Vite with TypeScript and Tailwind CSS v4. It streamlines the configuration process, ensuring a minimal and efficient project structure to help you start coding immediately.
 
 ## Features
 
-- **React + TypeScript**: Sets up a new Vite project with React and TypeScript.
-- **Tailwind CSS**: Installs and configures Tailwind CSS for modern styling.
-- **Pre-configured App**: Adds a simple Tailwind-styled component to `App.tsx` to start building your UI.
-- **Minimal Setup**: Removes unnecessary files like `App.css` and the `react.svg` image, leaving only the essentials.
+- **React + TypeScript**: Initializes a Vite project with React and TypeScript.
+- **Tailwind CSS v4**: Installs and configures Tailwind CSS.
+- **Optimized Setup**: Cleans up unnecessary files (`App.css`, `react.svg`), keeping the project lightweight.
+- **Pre-configured App**: Replaces `App.tsx` with a simple, styled component using Tailwind CSS.
+- **Automated Development Environment**: Opens VS Code and starts the development server in its terminal.
 
-## Requirements
+## Prerequisites
 
-- **Node.js** and **npm** must be installed. If they aren't installed, the script will exit and notify you.
+Ensure the following are installed before running the script:
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [git](https://git-scm.com/downloads) (for git bash)
 
 ## Installation & Usage
 
-1. Clone this repository or download the script to your local machine.
-2. Open a terminal in the directory where the script is located.
-3. Give excutable permisson by giving
+### Quick Installation
 
-````
-chmod +x setup-react-ts-tailwind.sh
+1. Open Git Bash.
+2. Navigate to the folder where you want to install the project using:
+   ```bash
+   cd /path/to/your/folder
+   ```
+3. Run the following command to set up the project:
+   ```bash
+   bash <(curl -s https://raw.githubusercontent.com/bhuvi819381/install/refs/heads/main/install.sh)
+   ```
+
+To quickly set up the project, run the following command:
+
+Alternatively, you can manually execute the script:
+
+1. Clone this repository or download the script.
+2. Open gitbash or vscode in the directory where the script is located.
+3. Grant execute permission:
+
+   ```bash
+   chmod +x setup-react-ts-tailwind.sh
+   ```
 
 4. Run the script:
 
-```bash
+   ```bash
    ./setup-react-ts-tailwind.sh
-````
+   ```
 
-5. The script will prompt you for the project name. Enter your desired project name (e.g., my-app).
+5. Enter the desired project name when prompted (e.g., `my-app`).
+6. The script will perform the following steps:
+   - Create a new Vite project with React and TypeScript.
+   - Install Tailwind CSS and its dependencies.
+   - Configure Tailwind CSS.
+   - Remove unnecessary files for a cleaner setup.
+   - Replace `App.tsx` with a pre-configured Tailwind-styled component.
+   - Open VS Code and start the development server.
 
-6. The script will:
+7. Once completed, open [http://localhost:5173/](http://localhost:5173/) in your browser to see the default Tailwind-styled app.
 
-- Create a new Vite project with React and TypeScript.
-- Install dependencies, including Tailwind CSS.
-- Configure Tailwind CSS and remove unnecessary files.
-- Replace App.tsx with a simple Tailwind-based component.
-- Start the development server.
+## Expected Output
 
-7. Once the script completes, open http://localhost:5173/ in your browser and start coding!
+After running the script, `App.tsx` will display a simple, centered message using Tailwind CSS:
 
-## Example Output
-
-After running the script and starting the dev server, your App.tsx will display a centered message with Tailwind CSS styling:
-
+```tsx
+export default function App() {
+  return (
+    <div className="flex h-screen items-center justify-center bg-gray-100 text-2xl font-semibold">
+      Hello, Tailwind CSS with React and TypeScript!
+    </div>
+  );
+}
 ```
-Hello, Tailwind CSS with React and TypeScript!
-```
 
-## Author & Co-Author
+## Authors
 
-- **Author**: [Bhuvnesh Upadhyay](https://github.com/bhuvi819381)
-  - Twitter: [@bhuvi819381](https://x.com/bhuvi819381)
+- **Bhuvnesh Upadhyay**  
+  - GitHub: [bhuvi819381](https://github.com/bhuvi819381)  
+  - Twitter (X): [@bhuvi819381](https://x.com/bhuvi819381)  
   - LinkedIn: [bhuvi819381](https://www.linkedin.com/in/bhuvi819381/)
-- **Co-Author**: [Nishanth Venkatesan](https://github.com/nishanth1596)
-  - Twitter: [@nishanth1596](https://x.com/nishanth1596)
-  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nishanth-venkatesan-279b7a107/)
+
+- **Nishanth Venkatesan**  
+  - GitHub: [nishanth1596](https://github.com/nishanth1596)  
+  - Twitter (X): [@nishanth1596](https://x.com/nishanth1596)  
+  - LinkedIn: [Nishanth Venkatesan](https://www.linkedin.com/in/nishanth-venkatesan-279b7a107/)
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is licensed under the [MIT License](LICENSE), granting you the freedom to use, modify, and distribute it as needed.
+
