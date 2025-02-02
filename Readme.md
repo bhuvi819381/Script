@@ -23,7 +23,8 @@ This script automates the creation of a new React project with TypeScript, and i
 chmod +x setup-react-ts-tailwind.sh
 
 4. Run the script:
-   ```bash
+
+```bash
    ./setup-react-ts-tailwind.sh
 ````
 
@@ -37,7 +38,7 @@ chmod +x setup-react-ts-tailwind.sh
 - Replace App.tsx with a simple Tailwind-based component.
 - Start the development server.
 
-7. Once the script completes, open http://localhost:5174/ in your browser and start coding!
+7. Once the script completes, open http://localhost:5173/ in your browser and start coding!
 
 ## Example Output
 
@@ -49,9 +50,9 @@ Hello, Tailwind CSS with React and TypeScript!
 
 ## Author & Co-Author
 
-- **Author**: [Your Name](https://github.com/bhuvi819381)
+- **Author**: [Bhuvnesh Upadhyay](https://github.com/bhuvi819381)
   - Twitter: [@bhuvi819381](https://x.com/bhuvi819381)
-  - LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/bhuvi819381/)
+  - LinkedIn: [bhuvi819381](https://www.linkedin.com/in/bhuvi819381/)
 - **Co-Author**: [Nishanth Venkatesan](https://github.com/nishanth1596)
   - Twitter: [@nishanth1596](https://x.com/nishanth1596)
   - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nishanth-venkatesan-279b7a107/)
