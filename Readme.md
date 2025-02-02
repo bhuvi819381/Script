@@ -28,7 +28,7 @@ Ensure the following are installed before running the script:
    ```
 3. Run the following command to set up the project:
    ```bash
-   bash <(curl -s https://raw.githubusercontent.com/bhuvi819381/install/refs/heads/main/install.sh)
+   bash <(curl -s https://raw.githubusercontent.com/bhuvi819381/Script/refs/heads/main/install.sh)
    ```
 
 To quickly set up the project, run the following command:
@@ -40,13 +40,13 @@ Alternatively, you can manually execute the script:
 3. Grant execute permission:
 
    ```bash
-   chmod +x setup-react-ts-tailwind.sh
+   chmod +x install.sh
    ```
 
 4. Run the script:
 
    ```bash
-   ./setup-react-ts-tailwind.sh
+   ./install.sh
    ```
 
 5. Enter the desired project name when prompted (e.g., `my-app`).
