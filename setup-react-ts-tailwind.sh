@@ -49,6 +49,15 @@ cat > src/index.css <<EOL
 @import "tailwindcss";
 EOL
 
+# Deleting redudant react.svg from assets
+echo 'Deleting react.svg from assets'
+cd assets
+rm -f src/assets/react.svg
+
+# Deleting default App.css since this is a tailwind-based project template...
+echo 'Deleting default App.css since this is a tailwind-based project template...'
+rm -f src/App.css 
+
 # Replace the contents of App.tsx with a simple Tailwind-styled component
 echo "Updating App.tsx with a Tailwind-styled component..."
 cat > src/App.tsx <<EOL
