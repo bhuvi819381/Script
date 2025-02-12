@@ -29,6 +29,7 @@ npm install
 echo "Installing Tailwind CSS and its dependencies..."
 npm install tailwindcss @tailwindcss/vite
 
+
 # Configure Tailwind CSS
 echo "Configuring Tailwind CSS..."
 cat > vite.config.ts <<EOL
@@ -48,6 +49,18 @@ echo "Adding Tailwind directives to the CSS file..."
 cat > src/index.css <<EOL
 @import "tailwindcss";
 EOL
+
+# Install Tailwind Prettier extension and adding the plugin
+echo 'Install Tailwind Prettier extension and adding the plugin'
+npm install -D prettier prettier-plugin-tailwindcss
+
+echo 'Creating .prettierrc file...'
+cat > .prettierrc <<EOL
+{
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+EOL
+
 
 # Deleting redudant react.svg from assets
 echo 'Deleting react.svg from assets'
